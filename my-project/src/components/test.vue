@@ -9,18 +9,20 @@
     </div>
 </template>
 <script>
-new Vue({
-  el: '#demo',
-  data: {
-    show: true
-  }
-})
+    export default{
+        data () {
+            return {
+            show: true
+            }
+        }
+    }
 </script>
+
 <style>
-    .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
+    opacity: 0;
 }
 </style>
