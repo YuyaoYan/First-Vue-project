@@ -13,8 +13,6 @@ import Select from '../components/select'
 import Template from '../components/template'
 import Cascader from '../components/cascader'
 import Transfer from '../components/transfer'
-import Captcha from '../components/YYY/captcha'
-// import Aa from '../components/aa'
 
 Vue.use(Router)
 
@@ -60,9 +58,6 @@ export default new Router({
     },{
         path: '/transfer',
         component: Transfer
-    },{
-        path: '/YYY/captcha',
-        component: Captcha
     }
   ]
 })
