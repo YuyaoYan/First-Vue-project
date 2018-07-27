@@ -14,6 +14,7 @@ import Template from '../components/template'
 import Cascader from '../components/cascader'
 import Transfer from '../components/transfer'
 import Captcha from '../components/YYY/Captcha'
+import Weibo from '../components/weibo/weibo_test'
 
 Vue.use(Router)
 
@@ -62,6 +63,9 @@ export default new Router({
     },{
         path: '/YYY/captcha',
         component: Captcha
-    }
+    },{
+      path: '/weibo/weibo_test',
+      component: Weibo
+  }
   ]
 })
