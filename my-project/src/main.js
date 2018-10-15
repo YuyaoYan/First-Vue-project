@@ -6,9 +6,12 @@ import router from './router/index'
 import ElementUI from 'ifbp-element'
 // import locale from 'ifbp-element/lib/locale/lang/en'
 import 'ifbp-element/lib/theme-default/index.css'
+import './mockjs'
+import Axios from 'axios';
 
 Vue.use(ElementUI)
 Vue.config.productionTip = false
+vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({

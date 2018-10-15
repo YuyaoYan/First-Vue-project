@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '../components/HelloWorld'
+import HelloWorld from '@/components/HelloWorld'
 import Test from '../components/test'
 import Autocomplete from '../components/autocomplete'
 import Button from '../components/button'
@@ -11,23 +11,19 @@ import Inputbox from '../components/inputbox'
 import Radio from '../components/radio'
 import Select from '../components/select'
 import Template from '../components/template'
-import Cascader from '../components/cascader'
-import Transfer from '../components/transfer'
-import Captcha from '../components/YYY/Captcha'
-import Weibo from '../components/weibo/weibo_test'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },{
         path: '/test',
         component: Test
     },{
-        path: '/',
-      //   name: 'HelloWorld',
-        component: HelloWorld
-      },{
         path: '/autocomplete',
         component: Autocomplete
     },{
@@ -54,18 +50,6 @@ export default new Router({
     },{
         path: '/template',
         component: Template
-    },{
-        path: '/cascader',
-        component: Cascader
-    },{
-        path: '/transfer',
-        component: Transfer
-    },{
-        path: '/YYY/captcha',
-        component: Captcha
-    },{
-      path: '/weibo/weibo_test',
-      component: Weibo
-  }
+    }
   ]
 })
