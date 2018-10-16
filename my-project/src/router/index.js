@@ -11,6 +11,7 @@ import Inputbox from '../components/inputbox'
 import Radio from '../components/radio'
 import Select from '../components/select'
 import Template from '../components/template'
+import New from '../components/new/new.vue'
 
 Vue.use(Router)
 
@@ -50,6 +51,9 @@ export default new Router({
     },{
         path: '/template',
         component: Template
-    }
+    },{
+        path: '/new',
+        component: New
+  }
   ]
 })

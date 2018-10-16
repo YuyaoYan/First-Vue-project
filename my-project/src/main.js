@@ -6,13 +6,16 @@ import router from './router/index'
 import ElementUI from 'ifbp-element'
 // import locale from 'ifbp-element/lib/locale/lang/en'
 import 'ifbp-element/lib/theme-default/index.css'
-import './mockjs'
-import Axios from 'axios';
+import axios from 'axios';
+import Mock from './mock'
+
+require('./mock.js');
 
 Vue.use(ElementUI)
 Vue.config.productionTip = false
-vue.prototype.$http = axios
 
+axios.defaults.withCredentials = true
+Vue.prototype.$axios = axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

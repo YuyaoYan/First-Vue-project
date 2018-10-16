@@ -1,0 +1,66 @@
+<!-- <html>
+
+<head>
+  <title>JavaScript获取鼠标坐标</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <style type="text/css">
+    .tip {
+      width: 200px;
+      border: 2px solid #ddd;
+      padding: 8px;
+      background: #f1f1f1;
+      color: #666;
+    }
+  </style>
+  <script type="text/javascript">
+    function mousePos(e) {
+      var x, y;
+      var e = e || window.event;
+      return {
+        x: e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft,
+        y: e.clientY + document.body.scrollTop + document.documentElement.scrollTop,
+      };
+
+    };
+    function test(e) {
+      document.getElementById("mjs").innerHTML = mousePos(e).x + ',' + mousePos(e).y;
+    };
+  </script>
+</head>
+
+<body>
+  <div id="mjs" class="tip"></div>
+  <div id="333" style="width:1000px;height:600px;background:#ccc;" onmousemove="test(event)"></div>
+</body>
+
+</html> -->
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>javascript获得鼠标位置</title>
+</head>
+
+<body>
+  <script> 
+    function mouseMove(ev) {
+      Ev = ev || window.event;
+      var mousePos = mouseCoords(ev);
+      document.getElementById("xxx").value = mousePos.x;
+      document.getElementById("yyy").value = mousePos.y;
+    }
+    function mouseCoords(ev) {
+      if (ev.pageX || ev.pageY) {
+        return { x: ev.pageX, y: ev.pageY };
+      }
+      return {
+        x: ev.clientX + document.body.scrollLeft - document.body.clientLeft,
+        y: ev.clientY + document.body.scrollTop - document.body.clientTop
+      };
+    }
+    document.onmousemove = mouseMove; 
+  </script> 鼠标X轴:
+  <input id=xxx type=text> 鼠标Y轴:
+  <input id=yyy type=text>
+</body>
