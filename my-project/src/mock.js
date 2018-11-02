@@ -1,4 +1,4 @@
-// 使用 Mock
+// 使用 Mock。命令告知Node去node_modules中查找mock包，先局部查找，找不到就去全局环境中查找。找到之后就会赋值给gulp变量，然后我们就可以使用它了
 var Mock = require('mockjs')
 
 // 获取 mock.Random 对象
@@ -22,4 +22,4 @@ const produceData = function (opt) {
     }
 }
 
-Mock.mock('/date','post', produceData);//当post或get请求到/news路由时Mock会拦截请求并返回上面的数据
+//Mock.mock('/date','post', produceData);//当post或get请求到/news路由时Mock会拦截请求并返回上面的数据

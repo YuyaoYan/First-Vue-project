@@ -6,7 +6,7 @@ import router from './router/index'
 import ElementUI from 'ifbp-element'
 // import locale from 'ifbp-element/lib/locale/lang/en'
 import 'ifbp-element/lib/theme-default/index.css'
-import axios from 'axios';
+import axios from 'axios'
 import Mock from './mock'
 
 require('./mock.js');
