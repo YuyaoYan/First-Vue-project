@@ -13,6 +13,7 @@ import Select from '../components/select'
 import Template from '../components/template'
 import New from '../components/new/new.vue'
 import Aaa from '../components/new/aaa.vue'
+import Element from '../components/element/src/element.vue'
 
 Vue.use(Router)
 
@@ -58,6 +59,9 @@ export default new Router({
     },{
       path: '/aaa',
       component: Aaa
+    },{
+      path: '/element',
+      component: Element
     }
   ]
 })
