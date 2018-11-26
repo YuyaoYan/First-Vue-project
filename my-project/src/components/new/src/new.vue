@@ -31,7 +31,7 @@
 </template> -->
 <script>
 import mock from "./new.mock.js"
-import jquery from "./jquery.3.3.1"
+// import jquery from "./jquery.3.3.1"
 export default {
   data() {
     return {

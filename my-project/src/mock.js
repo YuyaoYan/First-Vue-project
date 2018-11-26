@@ -24,9 +24,8 @@ const Random = Mock.Random;
 
 const huohoooo = function(opt){
   console.log('opt', opt);
-  debugger;
   let tableDemo = [];
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 8; i++) {
     let newObject = {
       date: Random.date('yyyy-MM-dd'),
       name: Random.cname(),
@@ -38,5 +37,6 @@ const huohoooo = function(opt){
     data: tableDemo
   }
 }
+
 Mock.mock('/element/huohoooo', huohoooo);//当post或get请求到/element/huohoooo路由时Mock会拦截请求并返回上面的数据
 // Mock.mock('/element/produceData','get', produceData);

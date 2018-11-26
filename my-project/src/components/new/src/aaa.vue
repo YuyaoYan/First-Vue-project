@@ -37,8 +37,7 @@
 </template>
 
 <script>
-// import mockAa from './mock.aa.js'
-// import jquery from "./jquery.3.3.1"
+import mock from '../../../mock.js';
 export default {
     data(){
         const vm = this;

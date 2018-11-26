@@ -6,7 +6,7 @@ import router from './router/index'
 // import ElementUI from 'ifbp-element'
 import ElementUI from 'element-ui';
 // import locale from 'ifbp-element/lib/locale/lang/en'
-import 'ifbp-element/lib/theme-default/index.css'
+// import 'ifbp-element/lib/theme-default/index.css'
 import 'element-ui/lib/theme-chalk/index.css';
 import VueResource from 'vue-resource';
 import axios from 'axios'
